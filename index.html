@@ -4,37 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="form-section">
+    <section class="content-container">
       <div class="header">
         <h1>Untitled UI</h1>
       </div>
-      <form class="form">
-        <div class="title">
-          <h1>Welcome back</h1>
-          <p>Please enter your details</p>
-        </div>
-        <div class="ema">
-          <label>Email</label><br />
-          <input type="text" placeholder="Enter your email" /><br />
-          <label>password</label><br />
-          <input type="text" placeholder="*********" /><br />
-        </div>
-        <div class="check">
-          <label class="checkbox-container">
-            <input type="checkbox" class="checkbox" /><span class="checkmark"
-              >Remember in 30 days</span
-            >
-          </label>
-          <h6>Forgot password</h6>
-        </div>
-        <div class="sign">
-          <button>Sign in</button>
-          <h5>Don't have an account? <a href="#">Sign up</a></h5>
-        </div>
-      </form>
+      <div class="form-container">
+        <form class="form">
+          <div class="title">
+            <h1>Welcome back</h1>
+            <p>Please enter your details.</p>
+          </div>
+          <div class="ema">
+            <label>Email</label><br />
+            <input type="text" placeholder="Enter your email" /><br />
+            <label>Password</label><br />
+            <input type="password" placeholder="*********" /><br />
+          </div>
+          <div class="check">
+            <div class="check-1">
+              <input type="checkbox" name="checkmark" class="checkb" />
+              <label for="checkmark">Remember in 30 days</label>
+            </div>
+            <div class="check-2">
+              <h6 class="solve">Forgot password</h6>
+            </div>
+          </div>
+          <div class="sign">
+            <button>Sign in</button>
+            <h5>Don't have an account? <a href="#">Sign up</a></h5>
+          </div>
+        </form>
+      </div>
       <div class="footer">
         <p>&copy; Untitled UI 2077</p>
       </div>
